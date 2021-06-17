@@ -1,4 +1,4 @@
-brigadeiro = input('digite a quantia de brigadeiro ') #para que o número não seja interpretado como str declaramos o tipo de variável
+brigadeiro = input('digite a quantia de brigadeiro ') 
 beijinho = input('digite o número de beijinho ')
 coxinha = input('digite o número de coxinha ')
 convidados = input('digite o número de convidados ')
