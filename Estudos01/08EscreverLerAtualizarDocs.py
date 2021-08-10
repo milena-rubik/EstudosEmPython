@@ -26,5 +26,5 @@ def ler_arquivo(nome_arquivo):
 if __name__ == '__main__':
     escrever_arquivo('Testando escrita. \n')
     atualizar_arquivo('Testando atualizar. \n')
-    incluir = 'Aleatório Aleatório\n\n'
+    incluir = '\n\nAleatório Aleatório\n\n'
     atualizar_arquivo(incluir)
