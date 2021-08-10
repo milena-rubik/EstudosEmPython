@@ -27,4 +27,4 @@ if __name__ == '__main__':
     escrever_arquivo('Testando escrita. \n')
     atualizar_arquivo('Testando atualizar. \n')
     incluir = 'Aleatório Aleatório\n\n'
-    atualizar_arquivo('teste.txt', incluir)
+    atualizar_arquivo(incluir)
