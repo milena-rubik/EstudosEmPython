@@ -18,11 +18,18 @@ for x in range (1,4): #percorre o código abaixo no intervalo selecionado
             listanota.append(nota)
             break
 
-
+maiornota = max(listanota) #captura o maior valor na lista
 indicevencedor = listanota.index(max(listanota))
-print('indice vencedor',indicevencedor)
-maiornota = max(listanota)
-print('maior nota', maiornota)
+
+listanotaempate = [i for i, item in enumerate(listanota) if item == maiornota] #captura índices que forem iguais a maior nota na lista notas
+
+
+if listanota.count(maiornota) > 1:
+    print('Houve empate entre os participantes: ')
+    for x in listanotaempate:
+        print(listaparticipante[x])
+else:
+     print(f'O vencedor é {listaparticipante[indicevencedor]} com nota {listanota[indicevencedor]}')
 
 
 
@@ -31,11 +38,3 @@ print('maior nota', maiornota)
 
 
 
-
-        
-
-
-# if  listanota.count(maiornota) > 1:
-#     print('Houve empate!')
-# else:
-#     print(f'O vencedor é {listaparticipante[indicevencedor]} com nota {listanota[indicevencedor]}')
