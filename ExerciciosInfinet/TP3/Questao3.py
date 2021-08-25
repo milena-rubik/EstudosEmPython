@@ -23,7 +23,6 @@ indicevencedor = listanota.index(max(listanota))
 
 listanotaempate = [i for i, item in enumerate(listanota) if item == maiornota] #captura índices que forem iguais a maior nota na lista notas
 
-
 if listanota.count(maiornota) > 1:
     print('Houve empate entre os participantes: ')
     for x in listanotaempate:
