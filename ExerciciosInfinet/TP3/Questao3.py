@@ -1,7 +1,7 @@
-# Questão 03
-# Em um concurso de fantasias, os jurados precisam digitar os nomes dos 5 participantes e suas respectivas notas, variando de 0 até 10. Crie uma função que leia os nomes dos participantes e, ao final, apresente apenas o nome e a nota do vencedor.
-# Fluxo de exceção: 
-# O programa deve verificar se a nota da pessoa é maior ou igual a zero e menor ou igual a dez.
+""" Questão 03
+Em um concurso de fantasias, os jurados precisam digitar os nomes dos 5 participantes e suas respectivas notas, variando de 0 até 10. Crie uma função que leia os nomes dos participantes e, ao final, apresente apenas o nome e a nota do vencedor.
+Fluxo de exceção: 
+O programa deve verificar se a nota da pessoa é maior ou igual a zero e menor ou igual a dez."""
 
 listaparticipante = list() 
 listanota = list()
