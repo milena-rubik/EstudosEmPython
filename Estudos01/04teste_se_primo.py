@@ -1,9 +1,9 @@
 # verificar se o número é primo (números que são divisíveis apenas por 1 e ele mesmo, lembrando que 1 não é primo)
 
-numteste = int(input('Entre com o número desejado'))
+numteste = int(input('Entre com o número desejado '))
 contdivisao = 0
 
-for x in range (1, numteste+1): #numteste + 1 devido ao intervalo ser aberto
+for x in range (1, numteste+1): #numteste + 1 devido ao intervalo ser aberto no final, exemplo se numteste=5 percorre (1,2,3,4,5)
     resto = numteste % x
     if resto == 0:
             contdivisao += 1 #acrescenta 1 a cada resto de divisão que retorna 0
