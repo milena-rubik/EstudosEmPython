@@ -14,7 +14,7 @@ def quadruplicar(num):
 print('O número 3 duplicado, triplicado e quadruplicado é:',duplicar(3),triplicar(3),quadruplicar(3)) #teste
 
 #Otimização do professor (especialmente quando se precisa criar muitas funções parecidas e com mais linhas de comando do que o exemplo):
-#   Criar uma função que cria as funções
+#Criar uma função que cria as funções
 def cria_fdemultplicar(multiplicador):
     def multiplicar(numero):
         return numero*multiplicador
