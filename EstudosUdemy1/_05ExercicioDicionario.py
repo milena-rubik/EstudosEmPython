@@ -36,7 +36,7 @@ for cadapergunta in perguntas: #'cadapergunta' corresponde a cada dicionário da
         
     if cadapergunta['opcoes'][entrada-1] == cadapergunta['resposta']: #índice da 'entrada' é ajustado com - 1, pois as listas em Python começam de zero.
         print('Parabéns, reposta certa!')
-        acertos += 1
+        acertos += 1 #incrementa 1 em acertos
     else:
         print('Precisa ler mais, reposta errada!')
 
