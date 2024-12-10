@@ -1,8 +1,6 @@
-#Crie uma função que encontra o primeiro duplicado considerando o segundo
-#número como a duplicação. Retorne a duplicação considerada.
+#Crie uma função que encontra o primeiro duplicado considerando o segundo número como a duplicação. Retorne a duplicação considerada.
 #Requisitos:
-#    A ordem do número duplicado é considerada a partir da segunda
-#    ocorrência do número, ou seja, o número duplicado em si.
+#    A ordem do número duplicado é considerada a partir da segunda ocorrência do número, ou seja, o número duplicado em si.
 #    Exemplo:
 #        [1, 2, 3, ->3<-, 2, 1] -> 1, 2 e 3 são duplicados (retorne 3)
 #        [1, 2, 3, 4, 5, 6] -> Retorne -1 (não tem duplicados)
@@ -34,8 +32,8 @@ def retornarrepetidos(lista): #cria a função
     if len(list(unicos)) == len(lista):
         return(-1)
 #ideia da função retornarrepetidos: percorrer cada elemento da lista, comparar com o conjunto 'unicos' e retornar esse elemento caso pertença
-#a esse conjunto, caso contrário adicionará o elemento ao conjunto 'unicos'. Assim cada elemento da lista na primeira vez que aparecer será adicionado
-#ao conjunto de 'unicos', mas se for a segunda será retornado. O último if compara o tamanho da lista de unicos com a lista original, se os tamanhos forem iguais
+#a esse conjunto, caso contrário, adicionará o elemento ao conjunto 'unicos'. Assim cada elemento da lista na primeira vez que aparecer será adicionado
+#ao conjunto de 'unicos', mas se for a segunda, será retornado. O último if compara o tamanho da lista de unicos com a lista original, se os tamanhos forem iguais
 #é porque não tinha repetidos e retorna '-1' conforme especificado.
         
             
