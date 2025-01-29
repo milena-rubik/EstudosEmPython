@@ -77,5 +77,30 @@ festa.update({
 print(festa)
 
 
+#DICIONARIOS PARA PRÓXIMOS EXEMPLOS:
+
+pessoa = {
+    'nome': 'fulano',
+    'sobrenome': 'das coves'
+}
+
+dados = {
+    'escola': 'tia marcy',
+    'serie': 'nivel 2'
+}
+
+# DESEMPACOTAMENTO DE DICIONÁRIO
+
+a, b = pessoa.values() #atribui o valor das chaves a 'a' e 'b'
+print(a, b) #tem saída 'fulano das coves'
+
+(a1, a2), (b1, b2) = pessoa.items()
+print(a1, a2) #saída: 'nome fulano'
+print(b1, b2) #saída 'sobrenome das coves'
+
+# UNIR DICIONÁRIOS EM UM SÓ
+diciocompleto = {**pessoa, **dados} #cria um dicionário com as chaves e valores dos dicionários 'pessoa' e 'dados'
+print(diciocompleto)
+
 
 
