@@ -89,7 +89,23 @@ dados = {
     'serie': 'nivel 2'
 }
 
-# DESEMPACOTAMENTO DE DICIONÁRIO
+# Unir dicionários
+diciocompleto = {**pessoa, **dados} #cria um dicionário com as chaves e valores dos dicionários 'pessoa' e 'dados'
+print(diciocompleto)
+
+
+#Para criar função que recebe argumentos nomeados (ela cria tipo um dicionário) use o '**kwargs', lembrando que para argumentos não nomeados usamos apenas '*args':
+def recebe_argumentos_nomeados(**kwargs):
+   for chave, valor in kwargs.items():
+    print(chave, valor)
+    
+recebe_argumentos_nomeados(teste = 'argumento nomeado', num=123)
+
+#Poderia usar a função acima para desempacotar um dicionário existente, exemplo:
+
+recebe_argumentos_nomeados(**diciocompleto) #saída será 'chave valor' de cada item
+
+#Outras formas de desempacotamento de dicionário:
 
 a, b = pessoa.values() #atribui o valor das chaves a 'a' e 'b'
 print(a, b) #tem saída 'fulano das coves'
@@ -97,10 +113,6 @@ print(a, b) #tem saída 'fulano das coves'
 (a1, a2), (b1, b2) = pessoa.items()
 print(a1, a2) #saída: 'nome fulano'
 print(b1, b2) #saída 'sobrenome das coves'
-
-# UNIR DICIONÁRIOS EM UM SÓ
-diciocompleto = {**pessoa, **dados} #cria um dicionário com as chaves e valores dos dicionários 'pessoa' e 'dados'
-print(diciocompleto)
 
 
 
