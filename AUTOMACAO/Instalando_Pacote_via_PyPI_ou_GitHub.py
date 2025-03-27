@@ -31,7 +31,7 @@ Exemplo:
 o argumento clone copia o repositório para um novo diretório criado, a palavra/argumento 'netmiko' após o path nomeia esta pasta diretório.
 
 Instalando:
-    student@student-vm:~/netmiko$ python setup.py install
+    student@vm:~/netmiko$ python setup.py install
 
 Após isso deve ser possível usar o pacote no python com o 'import'"""
     
