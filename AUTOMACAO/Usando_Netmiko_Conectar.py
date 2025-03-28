@@ -16,4 +16,4 @@ r1.is_alive() #verifica se a conexão está ativa, retorna True ou False
 r1.disconnect() #desconecta a sessão
 r1.establish_connection() #reconecta a sessão
 r1.send_command('comandovalido') #envia o comando ao dispositivo, use antes de outros comandos o comando "terminal length 0" para evitar que a saída do terminal seja paginada e a automação 'presa' esperando interação humana.
-r1.r1.send_config_set('comando1', 'comando2') #o argumento pode ser uma lista de comandos também
+r1.send_config_set('comando1', 'comando2') #o argumento pode ser uma lista de comandos também
