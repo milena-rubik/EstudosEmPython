@@ -94,4 +94,21 @@ def main():
         "Device", "Hostname", "OS Version", "Serial Number"
     )
     print(len(heading) * "-")  # Linha separadora
-    print(heading
+    print(heading)
+    print(len(heading) * "-")
+    for hostname, details in structure_data().items(): #seria a estrutura 'for chave, valor in dicionario.items()', ou seja hostname é a chave principal ('r1', 'r2'...) e details o subdicionário de cada um
+
+        print(
+            "|{:^10} | {:^10} | {:^12} | {:^15}|".format(
+                hostname,
+                details["hostname"],
+                details["os_version"],
+                details["serial_number"],
+            )
+        )
+        print(len(heading) * "-")
+
+
+if __name__ == "__main__":
+    main()
+
